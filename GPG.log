@@ -1,0 +1,20 @@
+ubuntu@ubuntu:~/Desktop$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 534E4209AB49EEE1C19D96162C44695DB9F6043D
+gpg: key BB572E0E2D182910: public key "Gentoo Linux Release Engineering (Automated Weekly Release Key) <releng@gentoo.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+ubuntu@ubuntu:~/Desktop$ gpg --verify install-amd64-minimal-20201104T214503Z.iso.DIGESTS.asc
+gpg: Signature made Thu 05 Nov 2020 12:01:05 AM UTC
+gpg:                using RSA key 534E4209AB49EEE1C19D96162C44695DB9F6043D
+gpg: Good signature from "Gentoo Linux Release Engineering (Automated Weekly Release Key) <releng@gentoo.org>" [expired]
+gpg: Note: This key has expired!
+Primary key fingerprint: 13EB BDBE DE7A 1277 5DFD  B1BA BB57 2E0E 2D18 2910
+     Subkey fingerprint: 534E 4209 AB49 EEE1 C19D  9616 2C44 695D B9F6 043D
+gpg: WARNING: not a detached signature; file 'install-amd64-minimal-20201104T214503Z.iso.DIGESTS' was NOT verified!
+ubuntu@ubuntu:~/Desktop$ gpg --verify install-x86-minimal-20201102T214502Z.iso.DIGESTS.asc 
+gpg: Signature made Tue 03 Nov 2020 01:01:05 AM UTC
+gpg:                using RSA key 534E4209AB49EEE1C19D96162C44695DB9F6043D
+gpg: Good signature from "Gentoo Linux Release Engineering (Automated Weekly Release Key) <releng@gentoo.org>" [expired]
+gpg: Note: This key has expired!
+Primary key fingerprint: 13EB BDBE DE7A 1277 5DFD  B1BA BB57 2E0E 2D18 2910
+     Subkey fingerprint: 534E 4209 AB49 EEE1 C19D  9616 2C44 695D B9F6 043D
+gpg: WARNING: not a detached signature; file 'install-x86-minimal-20201102T214502Z.iso.DIGESTS' was NOT verified!
